@@ -1,0 +1,7 @@
+{
+  "name": "@foreachbe/cypress-tinymce",
+  "version": "0.0.3",
+  "description": "Cypress plugin for working with TinyMCE",
+  "main": "index.js",
+  "license": "MIT"
+}
