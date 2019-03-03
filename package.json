@@ -3,5 +3,6 @@
   "version": "0.0.5",
   "description": "Cypress plugin for working with TinyMCE",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "homepage": "https://github.com/ForeachOS/cypress-tinymce"
 }
