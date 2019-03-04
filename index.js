@@ -4,7 +4,7 @@ Cypress.Commands.add('getTinyMce', (tinyMceId) => {
   });
 });
 
-// Cypress.Commands.add('setContent', {prevSubject: true}, (subject, content) => {
-//   subject.setContent(content);
-//   return subject;
-// });
+Cypress.Commands.add('setContent', {prevSubject: true}, (subject, content) => {
+  subject.setContent(content);
+  return subject;
+});
