@@ -3,4 +3,6 @@ WORKDIR /cypress
 
 COPY . .
 
+RUN yarn
+
 CMD ["yarn", "run", "cypress", "run"]
