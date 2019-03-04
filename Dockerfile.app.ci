@@ -1,0 +1,7 @@
+FROM beforeach/cypress:1.0.0
+
+COPY . .
+
+RUN yarn
+
+CMD ["yarn", "run", "testserver"]

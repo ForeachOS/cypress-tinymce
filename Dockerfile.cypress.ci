@@ -1,0 +1,6 @@
+FROM beforeach/cypress:1.0.0
+WORKDIR /cypress
+
+COPY . .
+
+CMD ["yarn", "run", "cypress", "run"]
