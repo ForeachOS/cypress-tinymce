@@ -13,16 +13,20 @@ easier interacting with [TinyMCE](https://www.tiny.cloud/).
 
 This will return the `tinymce` js instance for the given `id`.
 
-### setContent(text)
+### setTinyMceContent(id, text)
 
 This will set the content of the TinyMCE editor:
 
 ```javascript
+  cy.setTinyMceContent('someid', 'This is the new content');
+```
 
-  cy
-    .getTinyMce('someid')
-    .setContent('This is the new content');
+### getTinyMceContent(id)
 
+This will return the content of the TinyMce editor for the given id.
+
+```javascript
+  cy.getTinyMceContent('someid');
 ```
 
 ## Installation
