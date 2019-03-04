@@ -1,0 +1,10 @@
+html
+  head
+    title dit is een test
+  body
+    table
+      for blog in blogs
+        tr
+          td= blog.title
+          td!= blog.content
+    a(href='/new') Create new blog

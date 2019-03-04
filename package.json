@@ -6,10 +6,12 @@
   "license": "MIT",
   "homepage": "https://github.com/ForeachOS/cypress-tinymce",
   "scripts": {
-    "server": "node cypress/server/app.js"
+    "testserver": "cd cypress/server && node app.js"
   },
   "devDependencies": {
+    "body-parser": "^1.18.3",
     "cypress": "^3.1.5",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "pug": "^2.0.3"
   }
 }

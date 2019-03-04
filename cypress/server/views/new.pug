@@ -1,0 +1,13 @@
+html
+  head
+    title Create new blog
+    script(src='https://cloud.tinymce.com/5/tinymce.min.js?apiKey=f800u0dnf55vqbfxazbhkd1cd3r6t62nvppv4n9631m9ttxh')
+    script.
+      tinymce.init({ selector:'textarea' });
+
+  body
+    h1 Create a new blog
+    form(method='post',action='/create')
+      input#title(type='text',placeholder='the title of the blog', name='title')
+      textarea#content(placeholder='the content of the blog', name='content')
+      input(type='submit', value='Save')
