@@ -1,5 +1,13 @@
 services:
-  - docker
-
+- docker
 script:
-  - ./runtests.sh
+- "./runtests.sh"
+deploy:
+  provider: npm
+  email: cvp@foreach.be
+  api_key:
+    secure: vw/RXPceMmoK992alDaDzqY2z4SAqvCzRmiQtxWGLnigPYhBj+hLz/SHm2t8TagpeZe3POjeIf8JmajQavmmpgA9YZKTU3TFTIS58WFpN1OEUyAdnF0XFuuHLdh60/zNn2bdSsTnX52CgbD1hZP5nSFRP7aFeM6Udb+pynAFZxWjeToHGgSo4ltmj+QADFyjDR/Kgx64TOxAQDsiiKDb80UdjWpfeWWGrOR1GslgrkgYIccauwEUbbh7VIuzjAZ+l2a/FKq+4nbit2tOMLTGkXMyf7pb+23NQhGmV2c9Pa/K9LSWCLJHXnxgxEXe4mWhmv+1B3zmqm6hKE4Xqws2OctVwgrIH/e5GKY6YySjAfdMsTyLqry4rP9tLol9T978tKM25b7t0lLVBwT64Nc35PZFmaUqX+Lxmfm/uuXaUrKDgbOfl7cNuRVAKGs8TRiLZRgl9k+p7lmUBFF+IwXgWTfeZkoEMio+Pi1uld4z+Ze9nQryCaXaeS4ZJZ4A55bKcZ/kNlWN6tvrjhiB0J9jAZuR5BF799Spsgnj4Wl+MaNlM4ImqO1sPwI+DS1fB+MCHTNaODSZEfhMtbD+DYtUP3GJHf7uM7TLdUMsWGXnKyGVEY2N8SuzHzhY3KDgRQFwC66BLyVq15/qNmz1YvKMB7NHolMBpbkME4MxXea/RsU=
+  on:
+    tags: true
+    repo: ForeachOS/cypress-tinymce
+    branch: master
