@@ -5,6 +5,9 @@
   "main": "index.js",
   "license": "MIT",
   "homepage": "https://github.com/ForeachOS/cypress-tinymce",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "release": "np --no-publish",
     "testserver": "cd cypress/server && node app.js"
