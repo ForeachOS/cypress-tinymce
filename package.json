@@ -6,7 +6,7 @@
   "license": "MIT",
   "homepage": "https://github.com/ForeachOS/cypress-tinymce",
   "scripts": {
-    "release": "np",
+    "release": "np --no-publish",
     "testserver": "cd cypress/server && node app.js"
   },
   "devDependencies": {
