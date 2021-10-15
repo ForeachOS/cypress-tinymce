@@ -8,6 +8,10 @@
   "publishConfig": {
     "access": "public"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ForeachOS/cypress-tinymce.git"
+  },
   "scripts": {
     "release": "np --no-publish",
     "testserver": "cd cypress/server && node app.js"
